@@ -5,7 +5,11 @@
     <description />
     <groupId>com.fg.test</groupId>
     <artifactId>test-git-flow</artifactId>
+<<<<<<< HEAD
     <version>2.0</version>
+=======
+    <version>1.1-SNAPSHOT</version>
+>>>>>>> updating poms for 1.1 release
 
     <parent>
         <groupId>com.fg</groupId>
@@ -23,7 +27,11 @@
     <connection>scm:git:ssh://git@github.com/francm/testrepo.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/francm/testrepo.git</developerConnection>
     <url>http://inferno.fg.cz</url>
+<<<<<<< HEAD
       <tag>2.0</tag>
+=======
+      <tag>HEAD</tag>
+>>>>>>> updating poms for 1.1 release
   </scm>
   
   <distributionManagement>
