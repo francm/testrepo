@@ -59,31 +59,12 @@
         </pluginManagement>
         <plugins>
             <plugin>
-                <groupId>com.fg.maven</groupId>
-                <artifactId>maven-fg-versions-plugin</artifactId>
-                <configuration>
-                  <versionFilePath>/www/p_java/cps/libs_java/prj_edeecms/version.properties</versionFilePath>
-                  <includes>
-                    <include>com.fg*:*</include>
-                  </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <preparationGoals>clean install</preparationGoals>
-                    <localCheckout>true</localCheckout>
-                    <username>git</username>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <configuration>
-                    <username>git</username>
-                </configuration>
+            <groupId>com.atlassian.maven.plugins</groupId>
+            <artifactId>maven-jgitflow-plugin</artifactId>
+            <version>1.0-alpha8</version>
+            <configuration>
+                <!-- see goals wiki page for configuration options -->
+            </configuration>
             </plugin>
         </plugins>
     </build>
