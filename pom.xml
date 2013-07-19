@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>Gitflow test</name>
+    <description></description>
+    <groupId>com.fg.test</groupId>
+    <artifactId>test-git-flow</artifactId>
+    <version>1.0</version>
+
+    <parent>
+        <groupId>com.fg</groupId>
+        <artifactId>fg-default-jdk15</artifactId>
+        <version>1.22</version>
+    </parent>
+    
+    <organization>
+        <name>FG Forrest, a.s.</name>
+        <url>http://www.fg.cz</url>
+    </organization>
+    
+    <!-- GIT repository for all project modules -->
+  <scm>
+    <connection>scm:git:ssh://git@github.com:francm/testrepo.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:francm/testrepo.git</developerConnection>
+    <url>http://inferno.fg.cz</url>
+  </scm>
+    
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+    </properties>
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.4.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.8.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.fg.maven</groupId>
+                <artifactId>maven-fg-versions-plugin</artifactId>
+                <configuration>
+                  <versionFilePath>/www/p_java/cps/libs_java/prj_edeecms/version.properties</versionFilePath>
+                  <includes>
+                    <include>com.fg*:*</include>
+                  </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <preparationGoals>clean install</preparationGoals>
+                    <localCheckout>true</localCheckout>
+                    <username>git</username>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <username>git</username>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>
