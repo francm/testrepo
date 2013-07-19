@@ -22,8 +22,8 @@
     
     <!-- GIT repository for all project modules -->
   <scm>
-    <connection>scm:git:ssh://git@github.com:francm/testrepo.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:francm/testrepo.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/francm/testrepo.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/francm/testrepo.git</developerConnection>
     <url>http://inferno.fg.cz</url>
   </scm>
   
