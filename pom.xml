@@ -45,7 +45,7 @@
     </properties>
     
     <build>
-        <pluginManagement>
+        <!--pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-release-plugin</artifactId>
@@ -56,7 +56,7 @@
                     <version>1.8.1</version>
                 </plugin>
             </plugins>
-        </pluginManagement>
+        </pluginManagement-->
         <plugins>
             <plugin>
             <groupId>com.atlassian.maven.plugins</groupId>
