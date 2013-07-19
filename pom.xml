@@ -46,6 +46,15 @@
         </pluginManagement>
         <plugins>
             <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-jgitflow-plugin</artifactId>
+                <configuration>
+                    <allowSnapshots>true</allowSnapshots>
+                    <flowInitContext>
+                    </flowInitContext>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.fg.maven</groupId>
                 <artifactId>maven-fg-versions-plugin</artifactId>
                 <configuration>
