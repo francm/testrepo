@@ -5,7 +5,7 @@
     <description />
     <groupId>com.fg.test</groupId>
     <artifactId>test-git-flow</artifactId>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.2.0</version>
 
     <parent>
         <groupId>com.fg</groupId>
@@ -23,7 +23,7 @@
     <connection>scm:git:ssh://git@github.com/francm/testrepo.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/francm/testrepo.git</developerConnection>
     <url>http://inferno.fg.cz</url>
-      <tag>HEAD</tag>
+      <tag>3.2.0</tag>
   </scm>
   
   <distributionManagement>
