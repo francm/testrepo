@@ -1,4 +1,4 @@
 testrepo
 ========
 My testing repository
-BRANCH new
+BRANCH new2
