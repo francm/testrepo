@@ -2,4 +2,4 @@ testrepo
 ========
 My testing repository
 
-B1
+B1.1
